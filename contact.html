@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-[#FFF3E8]">
+<body class="bg-[#FFF3E8] overflow-x-hidden">
 
     <!-- Header -->
     <header class="relative bg-[#21130D]">
@@ -16,17 +17,42 @@
         <input type="checkbox" id="menu-toggle" class="peer hidden">
 
         <!-- Navbar -->
-        <nav class="flex justify-between items-center p-5 md:px-10">
+        <nav class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 p-5">
 
-            <h1 class="text-2xl font-bold text-white">
+            <h1 class="text-xl md:text-2xl font-bold text-white text-center">
                 Golden Saffron Cafe
             </h1>
 
-            <ul class="hidden md:flex gap-8 text-white">
-                <li><a href="index.html" class="hover:text-[#C49A75] transition duration-300">Home</a></li>
-                <li><a href="about.html" class="hover:text-[#C49A75] transition duration-300">About</a></li>
-                <li><a href="menu.html" class="hover:text-[#C49A75] transition duration-300">Menu</a></li>
-                <li><a href="contact.html" class="text-[#C49A75] font-bold hover:text-white transition duration-300">Contact</a></li>
+            <ul class="hidden md:flex items-center gap-8 text-white">
+
+                <li>
+                    <a href="index.html"
+                        class="hover:text-[#C49A75] transition duration-300">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html"
+                        class="hover:text-[#C49A75] transition duration-300">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="menu.html"
+                        class="hover:text-[#C49A75] transition duration-300">
+                        Menu
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html"
+                        class="text-[#C49A75] font-bold hover:text-white transition duration-300">
+                        Contact
+                    </a>
+                </li>
+
             </ul>
 
             <label for="menu-toggle"
@@ -37,24 +63,50 @@
         </nav>
 
         <!-- Mobile Menu -->
-        <div class="absolute top-0 right-0 z-50 h-screen w-64 bg-[#21130D]/60 backdrop-blur-md text-white p-6 shadow-xl translate-x-full peer-checked:translate-x-0 transition-transform duration-300 md:hidden">
+        <div class="absolute top-0 right-0 z-50 h-screen w-64 bg-[#21130D]/90 backdrop-blur-md text-white p-6 shadow-xl translate-x-full peer-checked:translate-x-0 transition-transform duration-300 md:hidden">
 
             <label for="menu-toggle"
                 class="text-3xl block text-right cursor-pointer mb-8">
-            
+                &times;
             </label>
 
             <ul class="flex flex-col gap-6 text-lg">
-                <li><a href="index.html" class="hover:text-[#C49A75] transition duration-300">Home</a></li>
-                <li><a href="about.html" class="hover:text-[#C49A75] transition duration-300">About</a></li>
-                <li><a href="menu.html" class="hover:text-[#C49A75] transition duration-300">Menu</a></li>
-                <li><a href="contact.html"class="hover:text-[#C49A75] transition duration-300">Contact</a></li>
+
+                <li>
+                    <a href="index.html"
+                        class="hover:text-[#C49A75] transition duration-300">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html"
+                        class="hover:text-[#C49A75] transition duration-300">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="menu.html"
+                        class="hover:text-[#C49A75] transition duration-300">
+                        Menu
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html"
+                        class="text-[#C49A75] font-bold">
+                        Contact
+                    </a>
+                </li>
+
             </ul>
 
         </div>
 
         <!-- Page Heading -->
-        <div class="text-center py-16 md:py-24 text-white">
+        <div class="text-center px-5 py-16 md:py-24 text-white">
+
             <h2 class="text-4xl md:text-5xl font-bold mb-4">
                 Contact Us
             </h2>
@@ -62,79 +114,85 @@
             <p class="text-gray-300">
                 We Would Love To Hear From You
             </p>
+
         </div>
 
     </header>
 
     <!-- Contact Section -->
-    <section class="px-5 py-16 md:px-16">
+    <section class="px-5 py-16">
 
-        <h2 class="text-3xl md:text-4xl font-bold text-[#3B2115] text-center mb-4">
-            Get In Touch
-        </h2>
+        <div class="max-w-6xl mx-auto">
 
-        <p class="text-[#6B5B50] text-center mb-12">
-            Visit us and enjoy your favourite coffee.
-        </p>
+            <h2 class="text-3xl md:text-4xl font-bold text-[#3B2115] text-center mb-4">
+                Get In Touch
+            </h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <p class="text-[#6B5B50] text-center mb-12">
+                Visit us and enjoy your favourite coffee.
+            </p>
 
-            <!-- Location -->
-            <div class="bg-white p-8 text-center rounded-lg shadow-md hover:shadow-xl transition duration-300">
+            <!-- Contact Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                <h3 class="text-xl font-bold text-[#3B2115] mb-4">
-                    Our Location
-                </h3>
+                <!-- Location -->
+                <div class="bg-white p-8 text-center rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
 
-                <p class="text-[#6B5B50] leading-7">
-                    Hathikhane ke paas, Kabutro ka chowk,
-                    City Palace, Jaipur, Rajasthan 302002
-                </p>
+                    <h3 class="text-xl font-bold text-[#3B2115] mb-4">
+                        Our Location
+                    </h3>
+
+                    <p class="text-[#6B5B50] leading-7">
+                        Hathikhane ke paas, Kabutro ka chowk,
+                        City Palace, Jaipur, Rajasthan 302002
+                    </p>
+
+                </div>
+
+                <!-- Email -->
+                <div class="bg-white p-8 text-center rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <h3 class="text-xl font-bold text-[#3B2115] mb-4">
+                        Email Address
+                    </h3>
+
+                    <p class="text-[#6B5B50] break-words">
+                        goldensaffroncafe@gmail.com
+                    </p>
+
+                </div>
+
+                <!-- Phone -->
+                <div class="bg-white p-8 text-center rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <h3 class="text-xl font-bold text-[#3B2115] mb-4">
+                        Phone Number
+                    </h3>
+
+                    <p class="text-[#6B5B50]">
+                        +91 8824100128
+                    </p>
+
+                </div>
 
             </div>
 
-            <!-- Email -->
-            <div class="bg-white p-8 text-center rounded-lg shadow-md hover:shadow-xl transition duration-300">
+            <!-- Working Hours -->
+            <div class="bg-[#FCEBDD] p-8 rounded-lg text-center mt-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
 
-                <h3 class="text-xl font-bold text-[#3B2115] mb-4">
-                    Email Address
+                <h3 class="text-2xl font-bold text-[#3B2115] mb-4">
+                    Working Hours
                 </h3>
 
                 <p class="text-[#6B5B50]">
-                    goldensaffroncafe@gmail.com
+                    Monday - Sunday
+                </p>
+
+                <p class="text-[#6F4E37] font-bold mt-2">
+                    09:00 AM - 11:00 PM
                 </p>
 
             </div>
-
-            <!-- Phone -->
-            <div class="bg-white p-8 text-center rounded-lg shadow-md hover:shadow-xl transition duration-300">
-
-                <h3 class="text-xl font-bold text-[#3B2115] mb-4">
-                    Phone Number
-                </h3>
-
-                <p class="text-[#6B5B50]">
-                    +91 8824100128
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- Working Hours -->
-        <div class="bg-[#FCEBDD] p-8 rounded-lg text-center mt-10 shadow-md hover:shadow-xl transition duration-300">
-
-            <h3 class="text-2xl font-bold text-[#3B2115] mb-4">
-                Working Hours
-            </h3>
-
-            <p class="text-[#6B5B50]">
-                Monday - Sunday
-            </p>
-
-            <p class="text-[#6F4E37] font-bold mt-2">
-                09:00 AM - 11:00 PM
-            </p>
 
         </div>
 
@@ -154,4 +212,5 @@
     </footer>
 
 </body>
+
 </html>

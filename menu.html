@@ -9,25 +9,48 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-[#FFF3E8]">
+<body class="bg-[#FFF3E8] overflow-x-hidden">
 
     <!-- Header -->
-    <header class="relative bg-[#21130D]">
+    <header class="relative bg-[#21130D] overflow-hidden">
 
         <input type="checkbox" id="menu-toggle" class="peer hidden">
 
         <!-- Navbar -->
-        <nav class="flex justify-between items-center p-5 md:px-10">
+        <nav class="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-3 p-5">
 
-            <h1 class="text-2xl font-bold text-white">
+            <h1 class="text-xl md:text-2xl font-bold text-white text-center">
                 Golden Saffron Cafe
             </h1>
 
-            <ul class="hidden md:flex gap-8 text-white">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="menu.html" class="text-[#C49A75] font-bold hover:text-white transition duration-300">Menu</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <ul class="hidden md:flex items-center gap-8 text-white">
+                <li>
+                    <a href="index.html"
+                        class="hover:text-[#C49A75] transition duration-300">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html"
+                        class="hover:text-[#C49A75] transition duration-300">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="menu.html"
+                        class="text-[#C49A75] font-bold hover:text-white transition duration-300">
+                        Menu
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html"
+                        class="hover:text-[#C49A75] transition duration-300">
+                        Contact
+                    </a>
+                </li>
             </ul>
 
             <label for="menu-toggle"
@@ -38,24 +61,24 @@
         </nav>
 
         <!-- Mobile Menu -->
-        <div class="absolute top-0 right-0 z-50 h-screen w-64 bg-[#21130D]/60 backdrop-blur-md text-white p-6 shadow-xl translate-x-full peer-checked:translate-x-0 transition-transform duration-300 md:hidden">
+        <div class="absolute top-0 right-0 z-50 h-screen w-64 bg-[#21130D]/90 backdrop-blur-md text-white p-6 shadow-xl translate-x-full peer-checked:translate-x-0 transition-transform duration-300 md:hidden">
 
             <label for="menu-toggle"
                 class="text-3xl block text-right cursor-pointer mb-8">
-                
+                &times;
             </label>
 
             <ul class="flex flex-col gap-6 text-lg">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" class="hover:text-[#C49A75]">Home</a></li>
+                <li><a href="about.html" class="hover:text-[#C49A75]">About</a></li>
+                <li><a href="menu.html" class="text-[#C49A75] font-bold">Menu</a></li>
+                <li><a href="contact.html" class="hover:text-[#C49A75]">Contact</a></li>
             </ul>
 
         </div>
 
         <!-- Page Heading -->
-        <div class="text-center py-16 md:py-24 text-white">
+        <div class="text-center px-5 py-16 md:py-24 text-white">
 
             <h2 class="text-4xl md:text-5xl font-bold mb-4">
                 Our Coffee Menu
@@ -70,378 +93,365 @@
     </header>
 
     <!-- Menu Section -->
-    <section class="px-5 py-16 md:px-16">
+    <section class="px-5 py-16">
 
-        <h2 class="text-3xl md:text-4xl font-bold text-[#3B2115] text-center mb-4">
-            Explore Our Menu
-        </h2>
+        <div class="max-w-6xl mx-auto">
 
-        <p class="text-[#6B5B50] text-center mb-12">
-            Choose Your Favourite Coffee
-        </p>
+            <h2 class="text-3xl md:text-4xl font-bold text-[#3B2115] text-center mb-4">
+                Explore Our Menu
+            </h2>
 
+            <p class="text-[#6B5B50] text-center mb-12">
+                Choose Your Favourite Coffee
+            </p>
 
-        <!-- Hot Coffee -->
-<div class="text-center mb-10">
+            <!-- Hot Coffee Heading -->
+            <div class="text-center mb-10">
 
-    <p class="text-[#A67C52] text-sm tracking-widest uppercase mb-2">
-        Freshly Brewed
-    </p>
-
-    <h2 class="text-3xl md:text-4xl font-bold text-[#3B2115] 
-           hover:scale-110 transition-transform duration-300
-           cursor-pointer inline-block">
-    Hot Coffee
-</h2>
-        
-
-    <div class="w-20 h-1 bg-[#C49A75] mx-auto mt-4 rounded-full"></div>
-
-</div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-
-            <!-- Cappuccino -->
-            <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
-
-                <img src="./capp.jpeg"
-                    alt="Cappuccino"
-                    class="w-full aspect-[4/3] object-cover rounded-lg">
-
-                <h3 class="text-xl font-bold text-[#3B2115] mt-5 mb-2">
-                    Cappuccino
-                </h3>
-
-                <p class="text-[#6B5B50] mb-4">
-                    Rich espresso with smooth steamed milk and creamy foam.
+                <p class="text-[#A67C52] text-sm tracking-widest uppercase mb-2">
+                    Freshly Brewed
                 </p>
 
-                <p class="text-[#6F4E37] text-xl font-bold">
-                    ₹150
-                </p>
-                  <a href="https://wa.me/918824100128"
-   target="_blank"
-   class="block text-center bg-[#6F4E37] text-white py-3 rounded-lg mt-5 hover:bg-[#4B3621] transition duration-300">
-    Order Now
-</a>
-            </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-[#3B2115]
+                    hover:scale-110 transition-transform duration-300
+                    cursor-pointer inline-block">
+                    Hot Coffee
+                </h2>
 
-
-            <!-- Espresso -->
-            <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
-
-                <img src="./esspresso.jpeg"
-                    alt="Espresso"
-                    class="w-full aspect-[4/3] object-cover rounded-lg">
-
-                <h3 class="text-xl font-bold text-[#3B2115] mt-5 mb-2">
-                    Espresso
-                </h3>
-
-                <p class="text-[#6B5B50] mb-4">
-                    Strong and rich coffee with a bold flavour.
-                </p>
-
-                <p class="text-[#6F4E37] text-xl font-bold">
-                    ₹100
-                </p>
-                <a href="https://wa.me/918824100128"
-   target="_blank"
-   class="block text-center bg-[#6F4E37] text-white py-3 rounded-lg mt-5 hover:bg-[#4B3621] transition duration-300">
-    Order Now
-</a>
+                <div class="w-20 h-1 bg-[#C49A75] mx-auto mt-4 rounded-full"></div>
 
             </div>
 
+            <!-- Hot Coffee Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
 
-            <!-- Cafe Latte -->
-            <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+                <!-- Cappuccino -->
+                <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
 
-                <img src="./latte.jpeg"
-                    alt="Cafe Latte"
-                    class="w-full aspect-[4/3] object-cover rounded-lg">
+                    <img src="./capp.jpeg" alt="Cappuccino"
+                        class="w-full aspect-[4/3] object-cover rounded-lg">
 
-                <h3 class="text-xl font-bold text-[#3B2115] mt-5 mb-2">
-                    Cafe Latte
-                </h3>
+                    <h3 class="text-xl font-bold text-[#3B2115] mt-5 mb-2">
+                        Cappuccino
+                    </h3>
 
-                <p class="text-[#6B5B50] mb-4">
-                    Smooth espresso blended with creamy steamed milk.
-                </p>
+                    <p class="text-[#6B5B50] mb-4">
+                        Rich espresso with smooth steamed milk and creamy foam.
+                    </p>
 
-                <p class="text-[#6F4E37] text-xl font-bold">
-                    ₹160
-                </p>
-                <a href="https://wa.me/918824100128"
-   target="_blank"
-   class="block text-center bg-[#6F4E37] text-white py-3 rounded-lg mt-5 hover:bg-[#4B3621] transition duration-300">
-    Order Now
-</a>
+                    <p class="text-[#6F4E37] text-xl font-bold">
+                        ₹150
+                    </p>
+
+                    <a href="https://wa.me/918824100128" target="_blank"
+                        class="block text-center bg-[#6F4E37] text-white py-3 rounded-lg mt-5 hover:bg-[#4B3621] transition duration-300">
+                        Order Now
+                    </a>
+
+                </div>
+
+                <!-- Espresso -->
+                <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <img src="./esspresso.jpeg" alt="Espresso"
+                        class="w-full aspect-[4/3] object-cover rounded-lg">
+
+                    <h3 class="text-xl font-bold text-[#3B2115] mt-5 mb-2">
+                        Espresso
+                    </h3>
+
+                    <p class="text-[#6B5B50] mb-4">
+                        Strong and rich coffee with a bold flavour.
+                    </p>
+
+                    <p class="text-[#6F4E37] text-xl font-bold">
+                        ₹100
+                    </p>
+
+                    <a href="https://wa.me/918824100128" target="_blank"
+                        class="block text-center bg-[#6F4E37] text-white py-3 rounded-lg mt-5 hover:bg-[#4B3621] transition duration-300">
+                        Order Now
+                    </a>
+
+                </div>
+
+                <!-- Cafe Latte -->
+                <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <img src="./latte.jpeg" alt="Cafe Latte"
+                        class="w-full aspect-[4/3] object-cover rounded-lg">
+
+                    <h3 class="text-xl font-bold text-[#3B2115] mt-5 mb-2">
+                        Cafe Latte
+                    </h3>
+
+                    <p class="text-[#6B5B50] mb-4">
+                        Smooth espresso blended with creamy steamed milk.
+                    </p>
+
+                    <p class="text-[#6F4E37] text-xl font-bold">
+                        ₹160
+                    </p>
+
+                    <a href="https://wa.me/918824100128" target="_blank"
+                        class="block text-center bg-[#6F4E37] text-white py-3 rounded-lg mt-5 hover:bg-[#4B3621] transition duration-300">
+                        Order Now
+                    </a>
+
+                </div>
+
+                <!-- Caramel Macchiato -->
+                <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <img src="./caramel.jpeg" alt="Caramel Macchiato"
+                        class="w-full aspect-[4/3] object-cover rounded-lg">
+
+                    <h3 class="text-xl font-bold text-[#3B2115] mt-5 mb-2">
+                        Caramel Macchiato
+                    </h3>
+
+                    <p class="text-[#6B5B50] mb-4">
+                        Rich espresso with creamy milk and sweet caramel.
+                    </p>
+
+                    <p class="text-[#6F4E37] text-xl font-bold">
+                        ₹180
+                    </p>
+
+                    <a href="https://wa.me/918824100128" target="_blank"
+                        class="block text-center bg-[#6F4E37] text-white py-3 rounded-lg mt-5 hover:bg-[#4B3621] transition duration-300">
+                        Order Now
+                    </a>
+
+                </div>
+
+                <!-- Cafe Mocha -->
+                <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <img src="./mocha.jpeg" alt="Cafe Mocha"
+                        class="w-full aspect-[4/3] object-cover rounded-lg">
+
+                    <h3 class="text-xl font-bold text-[#3B2115] mt-5 mb-2">
+                        Cafe Mocha
+                    </h3>
+
+                    <p class="text-[#6B5B50] mb-4">
+                        A delicious blend of espresso, chocolate and steamed milk.
+                    </p>
+
+                    <p class="text-[#6F4E37] text-xl font-bold">
+                        ₹170
+                    </p>
+
+                    <a href="https://wa.me/918824100128" target="_blank"
+                        class="block text-center bg-[#6F4E37] text-white py-3 rounded-lg mt-5 hover:bg-[#4B3621] transition duration-300">
+                        Order Now
+                    </a>
+
+                </div>
+
+                <!-- Cafe Mocha -->
+                <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <img src="./pista.png" alt="Cafe Mocha"
+                        class="w-full aspect-[4/3] object-cover rounded-lg">
+
+                    <h3 class="text-xl font-bold text-[#3B2115] mt-5 mb-2">
+                        Pistachio Latte
+                    </h3>
+
+                    <p class="text-[#6B5B50] mb-4">
+                        A rich and creamy espresso blended with steamed milk and smooth pistachio flavor
+                    </p>
+
+                    <p class="text-[#6F4E37] text-xl font-bold">
+                        ₹250
+                    </p>
+
+                    <a href="https://wa.me/918824100128" target="_blank"
+                        class="block text-center bg-[#6F4E37] text-white py-3 rounded-lg mt-5 hover:bg-[#4B3621] transition duration-300">
+                        Order Now
+                    </a>
+
+                </div>
 
             </div>
 
+            <!-- Cold Coffee Heading -->
+            <div class="text-center mb-10">
 
-            <!-- Caramel Macchiato -->
-            <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
-
-                <img src="./caramel.jpeg"
-                    alt="Caramel Macchiato"
-                    class="w-full aspect-[4/3] object-cover rounded-lg">
-
-                <h3 class="text-xl font-bold text-[#3B2115] mt-5 mb-2">
-                    Caramel Macchiato
-                </h3>
-
-                <p class="text-[#6B5B50] mb-4">
-                    Rich espresso with creamy milk and sweet caramel.
+                <p class="text-[#A67C52] text-sm tracking-widest uppercase mb-2">
+                    Chilled Perfection
                 </p>
 
-                <p class="text-[#6F4E37] text-xl font-bold">
-                    ₹180
-                </p>
-                <a href="https://wa.me/918824100128"
-   target="_blank"
-   class="block text-center bg-[#6F4E37] text-white py-3 rounded-lg mt-5 hover:bg-[#4B3621] transition duration-300">
-    Order Now
-</a>
-
-            </div>
-
-
-            <!-- Cafe Mocha -->
-            <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
-
-                <img src="./mocha.jpeg"
-                    alt="Cafe Mocha"
-                    class="w-full aspect-[4/3] object-cover rounded-lg">
-
-                <h3 class="text-xl font-bold text-[#3B2115] mt-5 mb-2">
-                    Cafe Mocha
-                </h3>
-
-                <p class="text-[#6B5B50] mb-4">
-                    A delicious blend of espresso, chocolate and steamed milk.
-                </p>
-
-                <p class="text-[#6F4E37] text-xl font-bold">
-                    ₹170
-                </p>
-                <a href="https://wa.me/918824100128"
-   target="_blank"
-   class="block text-center bg-[#6F4E37] text-white py-3 rounded-lg mt-5 hover:bg-[#4B3621] transition duration-300">
-    Order Now
-</a>
-
-            </div>
-             <!-- Cafe Mocha -->
-            <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
-
-                <img src="./mocha.jpeg"
-                    alt="Cafe Mocha"
-                    class="w-full aspect-[4/3] object-cover rounded-lg">
-
-                <h3 class="text-xl font-bold text-[#3B2115] mt-5 mb-2">
-                    Cafe Mocha
-                </h3>
-
-                <p class="text-[#6B5B50] mb-4">
-                    A delicious blend of espresso, chocolate and steamed milk.
-                </p>
-
-                <p class="text-[#6F4E37] text-xl font-bold">
-                    ₹170
-                </p>
-                <a href="https://wa.me/918824100128"
-   target="_blank"
-   class="block text-center bg-[#6F4E37] text-white py-3 rounded-lg mt-5 hover:bg-[#4B3621] transition duration-300">
-    Order Now
-</a>
-
-            </div>
-
-        </div>
-
-
-        <!-- Cold Coffee -->
-        <!-- Cold Coffee Heading -->
-<div class="text-center mb-10">
-
-    <p class="text-[#A67C52] text-sm tracking-widest uppercase mb-2">
-        Chilled Perfection
-    </p>
-
-    <h2 class="text-3xl md:text-4xl font-bold text-[#3B2115] 
-           hover:scale-110 transition-transform duration-300
-           cursor-pointer inline-block">
-         cold  Coffee
-</h2>
-
-    <div class="w-20 h-1 bg-[#C49A75] mx-auto mt-4 rounded-full"></div>
-
-</div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-            <!-- Cold Coffee -->
-            <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
-
-                <img src="./coldcoffe.jpeg"
-                    alt="Cold Coffee"
-                    class="w-full aspect-[4/3] object-cover rounded-lg">
-
-                <h3 class="text-xl font-bold text-[#3B2115] mt-5 mb-2">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#3B2115]
+                    hover:scale-110 transition-transform duration-300
+                    cursor-pointer inline-block">
                     Cold Coffee
-                </h3>
+                </h2>
 
-                <p class="text-[#6B5B50] mb-4">
-                    Refreshing chilled coffee with a rich and creamy taste.
-                </p>
-
-                <p class="text-[#6F4E37] text-xl font-bold">
-                    ₹120
-                </p>
-                <a href="https://wa.me/918824100128"
-   target="_blank"
-   class="block text-center bg-[#6F4E37] text-white py-3 rounded-lg mt-5 hover:bg-[#4B3621] transition duration-300">
-    Order Now
-</a>
+                <div class="w-20 h-1 bg-[#C49A75] mx-auto mt-4 rounded-full"></div>
 
             </div>
 
+            <!-- Cold Coffee Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <!-- Chocolate Frappe -->
-            <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+                <!-- Cold Coffee -->
+                <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
 
-                <img src="./frappe.jpeg"
-                    alt="Chocolate Frappe"
-                    class="w-full aspect-[4/3] object-cover rounded-lg">
+                    <img src="./coldcoffe.jpeg" alt="Cold Coffee"
+                        class="w-full aspect-[4/3] object-cover rounded-lg">
 
-                <h3 class="text-xl font-bold text-[#3B2115] mt-5 mb-2">
-                    Chocolate Frappe
-                </h3>
+                    <h3 class="text-xl font-bold text-[#3B2115] mt-5 mb-2">
+                        Cold Coffee
+                    </h3>
 
-                <p class="text-[#6B5B50] mb-4">
-                    Chilled chocolate coffee blended with milk and ice.
-                </p>
+                    <p class="text-[#6B5B50] mb-4">
+                        Refreshing chilled coffee with a rich and creamy taste.
+                    </p>
 
-                <p class="text-[#6F4E37] text-xl font-bold">
-                    ₹180
-                </p>
-                <a href="https://wa.me/918824100128"
-   target="_blank"
-   class="block text-center bg-[#6F4E37] text-white py-3 rounded-lg mt-5 hover:bg-[#4B3621] transition duration-300">
-    Order Now
-</a>
+                    <p class="text-[#6F4E37] text-xl font-bold">
+                        ₹120
+                    </p>
+
+                    <a href="https://wa.me/918824100128" target="_blank"
+                        class="block text-center bg-[#6F4E37] text-white py-3 rounded-lg mt-5 hover:bg-[#4B3621] transition duration-300">
+                        Order Now
+                    </a>
+
+                </div>
+
+                <!-- Chocolate Frappe -->
+                <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <img src="./frappe.jpeg" alt="Chocolate Frappe"
+                        class="w-full aspect-[4/3] object-cover rounded-lg">
+
+                    <h3 class="text-xl font-bold text-[#3B2115] mt-5 mb-2">
+                        Chocolate Frappe
+                    </h3>
+
+                    <p class="text-[#6B5B50] mb-4">
+                        Chilled chocolate coffee blended with milk and ice.
+                    </p>
+
+                    <p class="text-[#6F4E37] text-xl font-bold">
+                        ₹180
+                    </p>
+
+                    <a href="https://wa.me/918824100128" target="_blank"
+                        class="block text-center bg-[#6F4E37] text-white py-3 rounded-lg mt-5 hover:bg-[#4B3621] transition duration-300">
+                        Order Now
+                    </a>
+
+                </div>
+
+                <!-- Iced Americano -->
+                <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <img src="./americano.jpeg" alt="Iced Americano"
+                        class="w-full aspect-[4/3] object-cover rounded-lg">
+
+                    <h3 class="text-xl font-bold text-[#3B2115] mt-5 mb-2">
+                        Iced Americano
+                    </h3>
+
+                    <p class="text-[#6B5B50] mb-4">
+                        Bold espresso served chilled with refreshing cold water and ice.
+                    </p>
+
+                    <p class="text-[#6F4E37] text-xl font-bold">
+                        ₹140
+                    </p>
+
+                    <a href="https://wa.me/918824100128" target="_blank"
+                        class="block text-center bg-[#6F4E37] text-white py-3 rounded-lg mt-5 hover:bg-[#4B3621] transition duration-300">
+                        Order Now
+                    </a>
+
+                </div>
+
+                <!-- Hazelnut Cold Coffee -->
+                <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <img src="./nut.jpeg" alt="Hazelnut Cold Coffee"
+                        class="w-full aspect-[4/3] object-cover rounded-lg">
+
+                    <h3 class="text-xl font-bold text-[#3B2115] mt-5 mb-2">
+                        Hazelnut Cold Coffee
+                    </h3>
+
+                    <p class="text-[#6B5B50] mb-4">
+                        Chilled coffee with creamy milk and rich hazelnut flavour.
+                    </p>
+
+                    <p class="text-[#6F4E37] text-xl font-bold">
+                        ₹190
+                    </p>
+
+                    <a href="https://wa.me/918824100128" target="_blank"
+                        class="block text-center bg-[#6F4E37] text-white py-3 rounded-lg mt-5 hover:bg-[#4B3621] transition duration-300">
+                        Order Now
+                    </a>
+
+                </div>
+
+                <!-- Chocolate Frappe -->
+                <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <img src="./vanila.png" alt="Chocolate Frappe"
+                        class="w-full aspect-[4/3] object-cover rounded-lg">
+
+                    <h3 class="text-xl font-bold text-[#3B2115] mt-5 mb-2">
+                        vanilla cold coffee
+                    </h3>
+
+                    <p class="text-[#6B5B50] mb-4">
+                        Chilled vanilla coffee blended with milk and ice.
+                    </p>
+
+                    <p class="text-[#6F4E37] text-xl font-bold">
+                        ₹190
+                    </p>
+
+                    <a href="https://wa.me/918824100128" target="_blank"
+                        class="block text-center bg-[#6F4E37] text-white py-3 rounded-lg mt-5 hover:bg-[#4B3621] transition duration-300">
+                        Order Now
+                    </a>
+
+                </div>
+
+                <!-- Chocolate Frappe -->
+                <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <img src="./oreo.png" alt="Oreo Cold Coffee"
+                        class="w-full aspect-[4/3] object-cover rounded-lg">
+
+                    <h3 class="text-xl font-bold text-[#3B2115] mt-5 mb-2">
+                        Oreo Cold Coffee
+                    </h3>
+
+                    <p class="text-[#6B5B50] mb-4">
+                        Chilled chocolate coffee blended with milk and ice.
+                    </p>
+
+                    <p class="text-[#6F4E37] text-xl font-bold">
+                        ₹180
+                    </p>
+
+                    <a href="https://wa.me/918824100128" target="_blank"
+                        class="block text-center bg-[#6F4E37] text-white py-3 rounded-lg mt-5 hover:bg-[#4B3621] transition duration-300">
+                        Order Now
+                    </a>
+
+                </div>
 
             </div>
 
-
-            <!-- Iced Americano -->
-            <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
-
-                <img src="./americano.jpeg"
-                    alt="Iced Americano"
-                    class="w-full aspect-[4/3] object-cover rounded-lg">
-
-                <h3 class="text-xl font-bold text-[#3B2115] mt-5 mb-2">
-                    Iced Americano
-                </h3>
-
-                <p class="text-[#6B5B50] mb-4">
-                    Bold espresso served chilled with refreshing cold water and ice.
-                </p>
-
-                <p class="text-[#6F4E37] text-xl font-bold">
-                    ₹140
-                </p>
-                <a href="https://wa.me/918824100128"
-   target="_blank"
-   class="block text-center bg-[#6F4E37] text-white py-3 rounded-lg mt-5 hover:bg-[#4B3621] transition duration-300">
-    Order Now
-</a>
-
-            </div>
-
-
-            <!-- Hazelnut Cold Coffee -->
-            <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
-
-                <img src="./nut.jpeg"
-                    alt="Hazelnut Cold Coffee"
-                    class="w-full aspect-[4/3] object-cover rounded-lg">
-
-                <h3 class="text-xl font-bold text-[#3B2115] mt-5 mb-2">
-                    Hazelnut Cold Coffee
-                </h3>
-
-                <p class="text-[#6B5B50] mb-4">
-                    Chilled coffee with creamy milk and rich hazelnut flavour.
-                </p>
-
-                <p class="text-[#6F4E37] text-xl font-bold">
-                    ₹190
-                </p>
-                <a href="https://wa.me/918824100128"
-   target="_blank"
-   class="block text-center bg-[#6F4E37] text-white py-3 rounded-lg mt-5 hover:bg-[#4B3621] transition duration-300">
-    Order Now
-</a>
-
-            </div>
-              <!-- Chocolate Frappe -->
-            <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
-
-                <img src="./frappe.jpeg"
-                    alt="Chocolate Frappe"
-                    class="w-full aspect-[4/3] object-cover rounded-lg">
-
-                <h3 class="text-xl font-bold text-[#3B2115] mt-5 mb-2">
-                    Chocolate Frappe
-                </h3>
-
-                <p class="text-[#6B5B50] mb-4">
-                    Chilled chocolate coffee blended with milk and ice.
-                </p>
-
-                <p class="text-[#6F4E37] text-xl font-bold">
-                    ₹180
-                </p>
-                <a href="https://wa.me/918824100128"
-   target="_blank"
-   class="block text-center bg-[#6F4E37] text-white py-3 rounded-lg mt-5 hover:bg-[#4B3621] transition duration-300">
-    Order Now
-</a>
-
-            </div>
-  <!-- Chocolate Frappe -->
-            <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
-
-                <img src="./frappe.jpeg"
-                    alt="Chocolate Frappe"
-                    class="w-full aspect-[4/3] object-cover rounded-lg">
-
-                <h3 class="text-xl font-bold text-[#3B2115] mt-5 mb-2">
-                    Chocolate Frappe
-                </h3>
-
-                <p class="text-[#6B5B50] mb-4">
-                    Chilled chocolate coffee blended with milk and ice.
-                </p>
-
-                <p class="text-[#6F4E37] text-xl font-bold">
-                    ₹180
-                </p>
-                <a href="https://wa.me/918824100128"
-   target="_blank"
-   class="block text-center bg-[#6F4E37] text-white py-3 rounded-lg mt-5 hover:bg-[#4B3621] transition duration-300">
-    Order Now
-</a>
-
-            </div>
         </div>
 
     </section>
-
 
     <!-- Footer -->
     <footer class="bg-[#21130D] text-white text-center px-5 py-8">

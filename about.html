@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,25 +9,48 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-[#FFF3E8]">
+<body class="bg-[#FFF3E8] overflow-x-hidden">
 
     <!-- Header -->
-    <header class="relative bg-[#21130D]">
+    <header class="relative bg-[#21130D] overflow-hidden">
 
         <input type="checkbox" id="menu-toggle" class="peer hidden">
 
         <!-- Navbar -->
-        <nav class="flex justify-between items-center p-5 md:px-10">
+        <nav class="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-3 p-5">
 
-            <h1 class="text-2xl font-bold text-white">
+            <h1 class="text-xl md:text-2xl font-bold text-white text-center">
                 Golden Saffron Cafe
             </h1>
 
-            <ul class="hidden md:flex gap-8 text-white">
-                <li><a href="index.html" class="hover:text-[#C49A75] transition duration-300">Home</a></li>
-                <li><a href="about.html" class="text-[#C49A75] font-bold hover:text-white transition duration-300">About</a></li>
-                <li><a href="menu.html" class="hover:text-[#C49A75] transition duration-300">Menu</a></li>
-                <li><a href="contact.html"class="hover:text-[#C49A75] transition duration-300">Contact</a></li>
+            <ul class="hidden md:flex items-center gap-8 text-white">
+                <li>
+                    <a href="index.html"
+                        class="hover:text-[#C49A75] transition duration-300">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html"
+                        class="text-[#C49A75] font-bold hover:text-white transition duration-300">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="menu.html"
+                        class="hover:text-[#C49A75] transition duration-300">
+                        Menu
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html"
+                        class="hover:text-[#C49A75] transition duration-300">
+                        Contact
+                    </a>
+                </li>
             </ul>
 
             <label for="menu-toggle"
@@ -37,24 +61,25 @@
         </nav>
 
         <!-- Mobile Menu -->
-        <div class="absolute top-0 right-0 z-50 h-screen w-64 bg-[#21130D]/60 backdrop-blur-md text-white p-6 shadow-xl translate-x-full peer-checked:translate-x-0 transition-transform duration-300 md:hidden">
+        <div class="absolute top-0 right-0 z-50 h-screen w-64 bg-[#21130D]/90 backdrop-blur-md text-white p-6 shadow-xl translate-x-full peer-checked:translate-x-0 transition-transform duration-300 md:hidden">
 
             <label for="menu-toggle"
                 class="text-3xl block text-right cursor-pointer mb-8">
-                
+                &times;
             </label>
 
             <ul class="flex flex-col gap-6 text-lg">
-                <li><a href="index.html" class="hover:text-[#C49A75] transition duration-300">Home</a></li>
-                <li><a href="about.html" class="hover:text-[#C49A75] transition duration-300">About</a></li>
-                <li><a href="menu.html" class="hover:text-[#C49A75] transition duration-300">Menu</a></li>
-                <li><a href="contact.html" class="hover:text-[#C49A75] transition duration-300">Contact</a></li>
+                <li><a href="index.html" class="hover:text-[#C49A75]">Home</a></li>
+                <li><a href="about.html" class="text-[#C49A75] font-bold">About</a></li>
+                <li><a href="menu.html" class="hover:text-[#C49A75]">Menu</a></li>
+                <li><a href="contact.html" class="hover:text-[#C49A75]">Contact</a></li>
             </ul>
 
         </div>
 
         <!-- Page Heading -->
-        <div class="text-center py-16 md:py-24 text-white">
+        <div class="text-center px-5 py-16 md:py-24 text-white">
+
             <h2 class="text-4xl md:text-5xl font-bold mb-4">
                 About Our Cafe
             </h2>
@@ -62,24 +87,27 @@
             <p class="text-gray-300">
                 Discover the Story Behind Our Coffee
             </p>
+
         </div>
 
     </header>
 
     <!-- About Section -->
-    <section class="px-5 py-16 md:px-16">
+    <section class="px-5 py-16">
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
 
             <!-- Image -->
-            <div>
+            <div class="w-full md:w-1/2">
+
                 <img src="./header-img.png"
-                    class="w-full h-80 object-cover rounded-lg shadow-md hover:shadow-xl transition duration-300"
-                    alt="Golden Saffron Cafe">
+                    alt="Golden Saffron Coffee"
+                    class="w-full h-64 md:h-80 object-cover rounded-lg shadow-md">
+
             </div>
 
             <!-- Content -->
-            <div>
+            <div class="w-full md:w-1/2">
 
                 <p class="text-[#C49A75] font-semibold mb-3">
                     WELCOME TO GOLDEN SAFFRON CAFE
@@ -110,79 +138,187 @@
         </div>
 
     </section>
-  <!-- Our Story Section -->
-<section class="bg-[#FCEBDD] px-5 py-16 md:px-16">
 
-    <div class="max-w-5xl mx-auto text-center">
+    <!-- Our Story Section -->
+    <section class="bg-[#FCEBDD] px-5 py-16 md:py-20">
 
-        <p class="text-[#B9825A] font-semibold mb-3">
-            THE STORY BEHIND EVERY CUP
-        </p>
+        <div class="max-w-4xl mx-auto text-center">
 
-        <h2 class="text-3xl md:text-4xl font-bold text-[#3B2115] mb-6">
-            Our Story
-        </h2>
+            <p class="text-[#B9825A] font-semibold mb-3">
+                THE STORY BEHIND EVERY CUP
+            </p>
 
-        <p class="text-[#6B5B50] leading-8 mb-5">
-            Every great coffee has a story, and ours begins with
-            a simple passion for bringing people together.
-            Golden Saffron Cafe was created with the idea of
-            offering more than just delicious coffee. We wanted
-            to create a comfortable space where people could
-            relax, connect and enjoy the little moments of life.
-        </p>
+            <h2 class="text-3xl md:text-4xl font-bold text-[#3B2115] mb-6">
+                Our Story
+            </h2>
 
-        <p class="text-[#6B5B50] leading-8 mb-5">
-            At Golden Saffron Cafe, we believe that a perfect
-            cup of coffee can make an ordinary day special.
-            From the rich aroma of freshly brewed espresso
-            to the creamy taste of our signature beverages,
-            every cup is prepared with attention and care.
-            Our menu offers a variety of hot and cold coffees
-            to suit different tastes and preferences.
-        </p>
+            <p class="text-[#6B5B50] leading-8 mb-5">
+                Every great coffee has a story, and ours begins with
+                a simple passion for bringing people together.
+                Golden Saffron Cafe was created with the idea of
+                offering more than just delicious coffee. We wanted
+                to create a comfortable space where people could
+                relax, connect and enjoy the little moments of life.
+            </p>
 
-        <p class="text-[#6B5B50] leading-8 mb-5">
-            Our cafe is designed to provide a warm and peaceful
-            atmosphere where everyone feels welcome.
-            Whether you are meeting friends, spending quality
-            time with family, working on your laptop or simply
-            taking a break from a busy day, we want every visit
-            to be relaxing and memorable.
-        </p>
+            <p class="text-[#6B5B50] leading-8 mb-5">
+                At Golden Saffron Cafe, we believe that a perfect
+                cup of coffee can make an ordinary day special.
+                From the rich aroma of freshly brewed espresso
+                to the creamy taste of our signature beverages,
+                every cup is prepared with attention and care.
+                Our menu offers a variety of hot and cold coffees
+                to suit different tastes and preferences.
+            </p>
 
-        <p class="text-[#6B5B50] leading-8 mb-5">
-            We focus on quality ingredients, delicious flavours
-            and friendly service. Our goal is to make every
-            customer feel valued and comfortable. We believe
-            that small details, from the presentation of a
-            coffee cup to the welcoming environment, can
-            create a wonderful experience.
-        </p>
+            <p class="text-[#6B5B50] leading-8 mb-5">
+                Our cafe is designed to provide a warm and peaceful
+                atmosphere where everyone feels welcome.
+                Whether you are meeting friends, spending quality
+                time with family, working on your laptop or simply
+                taking a break from a busy day, we want every visit
+                to be relaxing and memorable.
+            </p>
 
-        <p class="text-[#6B5B50] leading-8">
-            As we continue our journey, our passion remains
-            the same: serving great coffee, creating happy
-            moments and building meaningful connections.
-            At Golden Saffron Cafe, every cup is an invitation
-            to slow down, enjoy the moment and make beautiful
-            memories.
-        </p>
+            <p class="text-[#6B5B50] leading-8 mb-5">
+                We focus on quality ingredients, delicious flavours
+                and friendly service. Our goal is to make every
+                customer feel valued and comfortable. We believe
+                that small details, from the presentation of a
+                coffee cup to the welcoming environment, can
+                create a wonderful experience.
+            </p>
 
-    </div>
+            <p class="text-[#6B5B50] leading-8">
+                As we continue our journey, our passion remains
+                the same: serving great coffee, creating happy
+                moments and building meaningful connections.
+                At Golden Saffron Cafe, every cup is an invitation
+                to slow down, enjoy the moment and make beautiful
+                memories.
+            </p>
 
-</section>
+        </div>
 
-    <!-- Footer -->
-    <footer class="bg-[#21130D] text-white text-center px-5 py-8">
+    </section>
 
-        <h3 class="text-xl font-bold mb-3">
-            Golden Saffron Cafe
-        </h3>
+    <!-- Contact / Footer Section -->
+    <footer id="contact" class="bg-[#21130D] text-white px-5 py-16">
 
-        <p class="text-gray-400 text-sm">
-            © 2026 Golden Saffron Cafe. All Rights Reserved.
-        </p>
+        <div class="max-w-6xl mx-auto">
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <!-- Cafe Information -->
+                <div>
+
+                    <h3 class="text-2xl font-bold mb-5">
+                        Golden Saffron Cafe
+                    </h3>
+
+                    <p class="text-gray-300 leading-7">
+                        Start Your Day Right with the Best
+                        Coffee and Delicious Food at
+                        Golden Saffron Cafe.
+                    </p>
+
+                </div>
+
+                <!-- Our Services -->
+                <div>
+
+                    <h3 class="text-xl font-bold mb-5">
+                        Our Services
+                    </h3>
+
+                    <ul class="space-y-3 text-gray-300">
+                        <li>Coffee & Beverages</li>
+                        <li>Fresh Desserts</li>
+                        <li>Takeaway</li>
+                        <li>Dine In</li>
+                    </ul>
+
+                </div>
+
+                <!-- Working Hours -->
+                <div>
+
+                    <h3 class="text-xl font-bold mb-5">
+                        Working Hours
+                    </h3>
+
+                    <p class="text-[#C49A75] mb-3">
+                        Monday - Sunday
+                    </p>
+
+                    <p class="text-gray-300">
+                        09:00 AM - 11:00 PM
+                    </p>
+
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+
+                    <h3 class="text-xl font-bold mb-5">
+                        Contact Us
+                    </h3>
+
+                    <p class="text-[#C49A75] mb-2">
+                        Location:
+                    </p>
+
+                    <p class="text-gray-300 mb-5">
+                        Jaipur, Rajasthan 302002
+                    </p>
+
+                    <p class="text-[#C49A75] mb-2">
+                        Email Address:
+                    </p>
+
+                    <p class="text-gray-300 mb-5">
+                        goldensaffroncafe@gmail.com
+                    </p>
+
+                    <p class="text-[#C49A75] mb-2">
+                        Phone Number:
+                    </p>
+
+                    <p class="text-gray-300">
+                        +91 8824100128
+                    </p>
+
+                </div>
+
+                <!-- Follow Us -->
+                <div>
+
+                    <h3 class="text-xl font-bold mb-5">
+                        Follow Us
+                    </h3>
+
+                    <p class="text-gray-300 mb-3">
+                        Follow us on Instagram
+                    </p>
+
+                    <p class="text-[#C49A75]">
+                        @golden_saffron_cafe
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-700 mt-12 pt-6 text-center">
+
+                <p class="text-gray-400 text-sm">
+                    © 2026 Golden Saffron Cafe. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
 
     </footer>
 
