@@ -13,56 +13,83 @@
 
 <body class="bg-[#FFF3E8]">
 
-
-    <header  id = "home" class=" relative min-h-screen bg-cover bg-center
-bg-[length:auto_100%] md:bg-cover"
-style="background-image: url('./header-img.png');">
+    <!-- Header -->
+    <header id="home"
+        class="relative min-h-screen bg-cover bg-center bg-no-repeat"
+        style="background-image: url('./header-img.png');">
 
         <div class="min-h-screen bg-black/50">
-<input type="checkbox" id="menu-toggle" class="peer hidden">
+
+            <input type="checkbox" id="menu-toggle" class="peer hidden">
+
             <!-- Navbar -->
+<!-- Navbar -->
+<nav class="w-full max-w-7xl mx-auto flex justify-between items-center gap-4 p-5 md:px-10">
 
-            <nav class="flex justify-between items-center p-5 md:px-10">
+    <h1 class="text-lg md:text-2xl font-bold text-white">
+        𝓖𝓸𝓵𝓭𝓮𝓷 𝓢𝓪𝓯𝓯𝓻𝓸𝓷 𝓒𝓪𝓯𝓮
+    </h1>
 
-                <h1 class="text-2xl font-bold text-white">
-                    𝓖𝓸𝓵𝓭𝓮𝓷 𝓢𝓪𝓯𝓯𝓻𝓸𝓷 𝓒𝓪𝓯𝓮
-                </h1>
+    <ul class="hidden md:flex items-center gap-6 text-white">
 
-                <ul class="hidden md:flex gap-8 text-white">
-    <li><a href="index.html" class="text-[#C49A75] font-bold hover:text-white transition duration-300">Home</a></li>
-    <li><a href="about.html" class="hover:text-[#C49A75] transition duration-300">About</a></li>
-    <li><a href="menu.html" class="hover:text-[#C49A75] transition duration-300">Menu</a></li>
-    <li><a href="contact.html" class="hover:text-[#C49A75] transition duration-300">Contact</a></li>
-</ul>
+        <li>
+            <a href="index.html"
+                class="text-[#C49A75] font-bold hover:text-white transition duration-300">
+                Home
+            </a>
+        </li>
 
-            <label for="menu-toggle"
-    class="text-white text-2xl md:hidden cursor-pointer">
-    ☰
-</label>
+        <li>
+            <a href="about.html"
+                class="hover:text-[#C49A75] transition duration-300">
+                About
+            </a>
+        </li>
 
-            </nav>
+        <li>
+            <a href="menu.html"
+                class="hover:text-[#C49A75] transition duration-300">
+                Menu
+            </a>
+        </li>
 
-<!-- Mobile Menu -->
+        <li>
+            <a href="contact.html"
+                class="hover:text-[#C49A75] transition duration-300">
+                Contact
+            </a>
+        </li>
 
-<div class="absolute top-0 right-0 z-50 h-screen w-64 bg-[#21130D]/60 backdrop-blur-md text-white p-6 shadow-xl translate-x-full peer-checked:translate-x-0 transition-transform duration-300 md:hidden">
+    </ul>
 
     <label for="menu-toggle"
-        class="text-3xl block text-right cursor-pointer mb-8">
-    
+        class="text-white text-2xl md:hidden cursor-pointer">
+        ☰
     </label>
 
-<ul class="flex flex-col gap-6 text-white"></ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="menu.html">Menu</a></li>
-    <li><a href="contact.html">Contact</a></li>
-</ul>
+</nav>
 
-</div>
-            <!-- Main Content -->
+            <!-- Mobile Menu -->
+            <div
+                class="absolute top-0 right-0 z-50 h-screen w-64 bg-[#21130D]/60 backdrop-blur-md text-white p-6 shadow-xl translate-x-full peer-checked:translate-x-0 transition-transform duration-300 md:hidden">
 
-            <div class="flex flex-col items-center justify-center
-            text-center text-white min-h-[80vh] px-5">
+                <label for="menu-toggle"
+                    class="text-3xl block text-right cursor-pointer mb-8">
+                    
+                </label>
+
+                <ul class="flex flex-col gap-6 text-white">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+
+            <!-- Hero Content -->
+            <div
+                class="flex flex-col items-center justify-center text-center text-white min-h-[80vh] px-5">
 
                 <p class="text-sm md:text-lg mb-5">
                     WELCOME TO GOLDEN SAFFRON COFFEE
@@ -77,10 +104,11 @@ style="background-image: url('./header-img.png');">
                 <p class="text-sm md:text-lg mb-8">
                     Experience the Art of Perfect Coffee
                 </p>
-<a href="menu.html"
-    class="inline-block bg-[#6F4E37] text-white px-6 py-3 rounded-lg hover:bg-[#4B3621] hover:shadow-lg transition duration-300">
-    Explore Menu
-</a>
+
+                <a href="menu.html"
+                    class="inline-block bg-[#6F4E37] text-white px-6 py-3 rounded-lg hover:bg-[#4B3621] hover:shadow-lg transition duration-300">
+                    Explore Menu
+                </a>
 
             </div>
 
@@ -89,44 +117,45 @@ style="background-image: url('./header-img.png');">
 
 
     <!-- About Section -->
+    <section class="px-5 py-16 md:px-10">
 
-    <section  id ="about" class="px-5 py-16 md:px-16">
+        <div class="max-w-7xl mx-auto">
 
-        <div class="flex flex-col md:flex-row items-center gap-10">
+            <div class="flex flex-col md:flex-row items-center gap-10">
 
-            <!-- About Image -->
+                <!-- About Image -->
+                <div class="w-full md:w-1/2">
 
-            <div class="w-full md:w-1/2">
+                    <img src="./header-img.png"
+                        class="w-full h-72 object-cover rounded-lg"
+                        alt="Coffee Shop">
 
-                <img src="./header-img.png"
-                class="w-full h-72 object-cover rounded-lg"
-                alt="Coffee Shop">
+                </div>
 
-            </div>
+                <!-- About Content -->
+                <div class="w-full md:w-1/2">
 
-            <!-- About Content -->
+                    <p class="text-amber-800 mb-3">
+                        ABOUT OUR CAFE
+                    </p>
 
-            <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-5">
+                        Coffee Makes Everything Better
+                    </h2>
 
-                <p class="text-amber-800 mb-3">
-                    ABOUT OUR CAFE
-                </p>
+                    <p class="text-gray-600 mb-5">
+                        Welcome to golden saffron cafe, a place where every
+                        cup of coffee is made with love and care.
+                        We provide fresh coffee and a peaceful
+                        environment for everyone.
+                    </p>
 
-                <h2 class="text-3xl md:text-4xl font-bold mb-5">
-                    Coffee Makes Everything Better
-                </h2>
+                    <a href="about.html"
+                        class="inline-block bg-[#6F4E37] text-white px-6 py-3 rounded-lg hover:bg-[#4B3621] hover:shadow-lg transition duration-300">
+                        Read More
+                    </a>
 
-                <p class="text-gray-600 mb-5">
-                    Welcome to golden saffron cafe, a place where every
-                    cup of coffee is made with love and care.
-                    We provide fresh coffee and a peaceful
-                    environment for everyone.
-                </p>
-
-                <a href="about.html"
-    class="inline-block bg-[#6F4E37] text-white px-6 py-3 rounded-lg hover:bg-[#4B3621] hover:shadow-lg transition duration-300">
-    Read More
-</a>
+                </div>
 
             </div>
 
@@ -136,92 +165,380 @@ style="background-image: url('./header-img.png');">
 
 
     <!-- Menu Section -->
-
     <section id="menu" class="bg-[#FCEBDD] px-5 py-16">
 
-        <!-- Heading -->
+        <div class="max-w-7xl mx-auto">
 
-        <div class="text-center mb-10">
+            <!-- Heading -->
+            <div class="text-center mb-10">
 
-            <p class="text-[#6F4E37] mb-2">
-                OUR MENU
-            </p>
+                <p class="text-[#6F4E37] mb-2">
+                    OUR MENU
+                </p>
 
-            <h2 class="text-3xl md:text-4xl font-bold">
-                Popular Coffee
-            </h2>
+                <h2 class="text-3xl md:text-4xl font-bold">
+                    Popular Coffee
+                </h2>
+
+            </div>
+
+            <!-- Coffee Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Card 1 -->
+                <div
+                    class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <img src="./capp.jpeg"
+                        class="w-full aspect-[4/3] object-cover rounded-lg"
+                        alt="Cappuccino">
+
+                    <h3 class="text-xl font-bold mt-4">
+                        Cappuccino
+                    </h3>
+
+                    <p class="text-gray-600 mt-2">
+                        A perfect blend of coffee and milk.
+                    </p>
+
+                    <p class="text-[#6F4E37] font-bold mt-3">
+                        ₹150
+                    </p>
+
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <img src="./coldcoffe.jpeg"
+                        class="w-full aspect-[4/3] object-cover rounded-lg"
+                        alt="Cold Coffee">
+
+                    <h3 class="text-xl font-bold mt-4">
+                        Cold Coffee
+                    </h3>
+
+                    <p class="text-gray-600 mt-2">
+                        Fresh and creamy chilled coffee.
+                    </p>
+
+                    <p class="text-[#6F4E37] font-bold mt-3">
+                        ₹120
+                    </p>
+
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <img src="./esspresso.jpeg"
+                        class="w-full aspect-[4/3] object-cover rounded-lg"
+                        alt="Espresso">
+
+                    <h3 class="text-xl font-bold mt-4">
+                        Espresso
+                    </h3>
+
+                    <p class="text-gray-600 mt-2">
+                        Strong coffee with rich flavour.
+                    </p>
+
+                    <p class="text-[#6F4E37] font-bold mt-3">
+                        ₹100
+                    </p>
+
+                </div>
+
+            </div>
 
         </div>
 
+    </section>
 
-        <!-- Coffee Cards -->
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Why Choose Us Section -->
+    <section class="px-5 py-16">
 
-            <!-- Card 1 -->
+        <div class="max-w-7xl mx-auto">
 
-            <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+            <!-- Heading -->
+            <div class="text-center mb-10">
 
-                <img src="./capp.jpeg"
-                class="w-full aspect-[4/3] object-cover rounded-lg"
-                alt="Cappuccino">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#3B2115]">
+                    Why Choose Us?
+                </h2>
 
-                <h3 class="text-xl font-bold mt-4">
-                    Cappuccino
-                </h3>
-
-                <p class="text-gray-600 mt-2">
-                    A perfect blend of coffee and milk.
-                </p>
-
-                <p class="text-[#6F4E37] font-bold mt-3">
-                    ₹150
+                <p class="text-gray-600 mt-3">
+                    What makes our cafe special
                 </p>
 
             </div>
 
+            <!-- Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-            <!-- Card 2 -->
+                <!-- Card 1 -->
+                <div
+                    class="bg-[#FCEBDD] p-8 text-center rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
 
-            <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+                    <h3 class="text-xl font-bold text-[#6F4E37] mb-3">
+                        Fresh Ingredients
+                    </h3>
 
-                <img src="./coldcoffe.jpeg"
-                class="w-full aspect-[4/3] object-cover rounded-lg"
-                alt="Cold Coffee">
+                    <p class="text-gray-600">
+                        We always use fresh and quality ingredients.
+                    </p>
 
-                <h3 class="text-xl font-bold mt-4">
-                    Cold Coffee
-                </h3>
+                </div>
 
-                <p class="text-gray-600 mt-2">
-                    Fresh and creamy chilled coffee.
-                </p>
+                <!-- Card 2 -->
+                <div
+                    class="bg-[#FCEBDD] p-8 text-center rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
 
-                <p class="text-[#6F4E37] font-bold mt-3">
-                    ₹120
+                    <h3 class="text-xl font-bold text-[#6F4E37] mb-3">
+                        Premium Coffee
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Enjoy the rich taste of our premium coffee.
+                    </p>
+
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="bg-[#FCEBDD] p-8 text-center rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <h3 class="text-xl font-bold text-[#6F4E37] mb-3">
+                        Cozy Atmosphere
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Enjoy your coffee in a peaceful environment.
+                    </p>
+
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                    class="bg-[#FCEBDD] p-8 text-center rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <h3 class="text-xl font-bold text-[#6F4E37] mb-3">
+                        Friendly Staff
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Our team is always ready to serve you.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Customer Reviews Section -->
+    <section class="px-5 py-16">
+
+        <div class="max-w-7xl mx-auto">
+
+            <!-- Heading -->
+            <div class="text-center mb-10">
+
+                <h2 class="text-3xl md:text-4xl font-bold text-[#3B2115]">
+                    What Our Customers Say
+                </h2>
+
+                <p class="text-gray-600 mt-3">
+                    Our customers love our coffee and service.
                 </p>
 
             </div>
 
+            <!-- Review Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-            <!-- Card 3 -->
+                <!-- Review 1 -->
+                <div
+                    class="bg-[#FCEBDD] p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
 
-            <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+                    <h3 class="text-xl font-bold text-[#3B2115]">
+                        Rohit
+                    </h3>
 
-                <img src="./esspresso.jpeg"
-                class="w-full aspect-[4/3] object-cover rounded-lg"
-                alt="Espresso">
+                    <p class="text-[#B7793F] mt-2">
+                        ★★★★★
+                    </p>
 
-                <h3 class="text-xl font-bold mt-4">
-                    Espresso
-                </h3>
+                    <p class="text-gray-600 mt-3">
+                        Amazing coffee and a very peaceful atmosphere.
+                        I really enjoyed my visit.
+                    </p>
 
-                <p class="text-gray-600 mt-2">
-                    Strong coffee with rich flavour.
-                </p>
+                </div>
 
-                <p class="text-[#6F4E37] font-bold mt-3">
-                    ₹100
+                <!-- Review 2 -->
+                <div
+                    class="bg-[#FCEBDD] p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <h3 class="text-xl font-bold text-[#3B2115]">
+                        Aryan Arora
+                    </h3>
+
+                    <p class="text-[#B7793F] mt-2">
+                        ★★★★★
+                    </p>
+
+                    <p class="text-gray-600 mt-3">
+                        The coffee tastes delicious and the staff
+                        is very friendly. Highly recommended!
+                    </p>
+
+                </div>
+
+                <!-- Review 3 -->
+                <div
+                    class="bg-[#FCEBDD] p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <h3 class="text-xl font-bold text-[#3B2115]">
+                        Yash Jaat
+                    </h3>
+
+                    <p class="text-[#B7793F] mt-2">
+                        ★★★★★
+                    </p>
+
+                    <p class="text-gray-600 mt-3">
+                        A perfect place to enjoy coffee with friends.
+                        Loved the cozy environment.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-[#21130D] text-white px-5 py-16">
+
+        <div class="max-w-7xl mx-auto">
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <!-- Cafe Information -->
+                <div>
+
+                    <h3 class="text-2xl font-bold mb-5">
+                        Golden Saffron Cafe
+                    </h3>
+
+                    <p class="text-gray-300 leading-7">
+                        Start Your Day Right with the Best
+                        Coffee and Delicious Food at
+                        Golden Saffron Cafe.
+                    </p>
+
+                </div>
+
+                <!-- Our Services -->
+                <div>
+
+                    <h3 class="text-xl font-bold mb-5">
+                        Our Services
+                    </h3>
+
+                    <ul class="space-y-3 text-gray-300">
+                        <li>Coffee & Beverages</li>
+                        <li>Fresh Desserts</li>
+                        <li>Takeaway</li>
+                        <li>Dine In</li>
+                    </ul>
+
+                </div>
+
+                <!-- Working Hours -->
+                <div>
+
+                    <h3 class="text-xl font-bold mb-5">
+                        Working Hours
+                    </h3>
+
+                    <p class="text-[#C49A75] mb-3">
+                        Monday - Sunday
+                    </p>
+
+                    <p class="text-gray-300">
+                        09:00 AM - 11:00 PM
+                    </p>
+
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+
+                    <h3 class="text-xl font-bold mb-5">
+                        Contact Us
+                    </h3>
+
+                    <p class="text-[#C49A75] mb-2">
+                        Location:
+                    </p>
+
+                    <p class="text-gray-300 mb-5">
+                        Jaipur, Rajasthan 302002
+                    </p>
+
+                    <p class="text-[#C49A75] mb-2">
+                        Email Address:
+                    </p>
+
+                    <p class="text-gray-300 mb-5">
+                        goldensaffroncafe@gmail.com
+                    </p>
+
+                    <p class="text-[#C49A75] mb-2">
+                        Phone Number:
+                    </p>
+
+                    <p class="text-gray-300">
+                        +91 8824100128
+                    </p>
+
+                </div>
+
+                <!-- Follow Us -->
+                <div>
+
+                    <h3 class="text-xl font-bold mb-5">
+                        Follow Us
+                    </h3>
+
+                    <p class="text-gray-300 mb-3">
+                        Follow us on Instagram
+                    </p>
+
+                    <p class="text-[#C49A75]">
+                        @golden_saffron_cafe
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-700 mt-12 pt-6 text-center">
+
+                <p class="text-gray-400 text-sm">
+                    © 2026 Golden Saffron Cafe. All Rights Reserved.
                 </p>
 
             </div>
@@ -230,315 +547,6 @@ style="background-image: url('./header-img.png');">
 
     </section>
 
-<!-- Why Choose Us Section -->
-
-<section class="px-5 py-16">
-
-    <!-- Heading -->
-
-    <div class="text-center mb-10">
-
-        <h2 class="text-3xl md:text-4xl font-bold text-[#3B2115]">
-            Why Choose Us?
-        </h2>
-
-        <p class="text-gray-600 mt-3">
-            What makes our cafe special
-        </p>
-
-    </div>
-
-
-    <!-- Cards -->
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-
-
-        <!-- Card 1 -->
-
-        <div class="bg-[#FCEBDD] p-8 text-center rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
-
-            <h3 class="text-xl font-bold text-[#6F4E37] mb-3">
-                Fresh Ingredients
-            </h3>
-
-            <p class="text-gray-600">
-                We always use fresh and quality ingredients.
-            </p>
-
-        </div>
-
-
-        <!-- Card 2 -->
-
-        <div class="bg-[#FCEBDD] p-8 text-center rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
-
-            <h3 class="text-xl font-bold text-[#6F4E37] mb-3">
-                Premium Coffee
-            </h3>
-
-            <p class="text-gray-600">
-                Enjoy the rich taste of our premium coffee.
-            </p>
-
-        </div>
-
-
-        <!-- Card 3 -->
-
-        <div class="bg-[#FCEBDD] p-8 text-center rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
-
-            <h3 class="text-xl font-bold text-[#6F4E37] mb-3">
-                Cozy Atmosphere
-            </h3>
-
-            <p class="text-gray-600">
-                Enjoy your coffee in a peaceful environment.
-            </p>
-
-        </div>
-
-
-        <!-- Card 4 -->
-
-        <div class="bg-[#FCEBDD] p-8 text-center rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
-
-            <h3 class="text-xl font-bold text-[#6F4E37] mb-3">
-                Friendly Staff
-            </h3>
-
-            <p class="text-gray-600">
-                Our team is always ready to serve you.
-            </p>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-<!-- Customer Reviews Section -->
-
-<section class="px-5 py-16">
-
-    <!-- Heading -->
-
-    <div class="text-center mb-10">
-
-        <h2 class="text-3xl md:text-4xl font-bold text-[#3B2115]">
-            What Our Customers Say
-        </h2>
-
-        <p class="text-gray-600 mt-3">
-            Our customers love our coffee and service.
-        </p>
-
-    </div>
-
-
-    <!-- Review Cards -->
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-
-        <!-- Review 1 -->
-
-        <div class="bg-[#FCEBDD] p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
-
-            <h3 class="text-xl font-bold text-[#3B2115]">
-                Rohit
-            </h3>
-
-            <p class="text-[#B7793F] mt-2">
-                ★★★★★
-            </p>
-
-            <p class="text-gray-600 mt-3">
-                Amazing coffee and a very peaceful atmosphere.
-                I really enjoyed my visit.
-            </p>
-
-        </div>
-
-
-        <!-- Review 2 -->
-
-        <div class="bg-[#FCEBDD] p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
-
-            <h3 class="text-xl font-bold text-[#3B2115]">
-                Aryan Arora
-            </h3>
-
-            <p class="text-[#B7793F] mt-2">
-                ★★★★★
-            </p>
-
-            <p class="text-gray-600 mt-3">
-                The coffee tastes delicious and the staff
-                is very friendly. Highly recommended!
-            </p>
-
-        </div>
-
-
-        <!-- Review 3 -->
-
-        <div class="bg-[#FCEBDD] p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
-
-            <h3 class="text-xl font-bold text-[#3B2115]">
-                Yash Jaat
-            </h3>
-
-            <p class="text-[#B7793F] mt-2">
-                ★★★★★
-            </p>
-
-            <p class="text-gray-600 mt-3">
-                A perfect place to enjoy coffee with friends.
-                Loved the cozy environment.
-            </p>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-<!-- Contact Section -->
-
-<section id="contact" class="bg-[#21130D] text-white px-5 py-16">
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-
-        <!-- Cafe Information -->
-
-        <div>
-
-            <h3 class="text-2xl font-bold mb-5">
-                Golden Saffron Cafe
-            </h3>
-
-            <p class="text-gray-300 leading-7">
-                Start Your Day Right with the Best
-                Coffee and Delicious Food at
-                Golden Saffron Cafe.
-            </p>
-
-        </div>
-
-
-        <!-- Our Services -->
-
-        <div>
-
-            <h3 class="text-xl font-bold mb-5">
-                Our Services
-            </h3>
-
-            <ul class="space-y-3 text-gray-300">
-
-                <li>Coffee & Beverages</li>
-                <li>Fresh Desserts</li>
-                <li>Takeaway</li>
-                <li>Dine In</li>
-
-            </ul>
-
-        </div>
-
-
-        <!-- Working Hours -->
-
-        <div>
-
-            <h3 class="text-xl font-bold mb-5">
-                Working Hours
-            </h3>
-
-            <p class="text-[#C49A75] mb-3">
-                Monday - Sunday
-            </p>
-
-            <p class="text-gray-300">
-                09:00 AM - 11:00 PM
-            </p>
-
-        </div>
-
-
-        <!-- Contact Information -->
-
-        <div>
-
-            <h3 class="text-xl font-bold mb-5">
-                Contact Us
-            </h3>
-
-            <p class="text-[#C49A75] mb-2">
-                Location:
-            </p>
-
-            <p class="text-gray-300 mb-5">
-                 Jaipur, Rajasthan 302002
-            </p>
-
-
-            <p class="text-[#C49A75] mb-2">
-                Email Address:
-            </p>
-
-            <p class="text-gray-300 mb-5">
-                goldensaffroncafe@gmail.com
-            </p>
-
-
-            <p class="text-[#C49A75] mb-2">
-                Phone Number:
-            </p>
-
-            <p class="text-gray-300">
-                +91 8824100128
-            </p>
-
-        </div>
-
-
-        <!-- Follow Us -->
-
-        <div>
-
-            <h3 class="text-xl font-bold mb-5">
-                Follow Us
-            </h3>
-
-            <p class="text-gray-300 mb-3">
-                Follow us on Instagram
-            </p>
-
-            <p class="text-[#C49A75]">
-                @golden_saffron_cafe
-            </p>
-
-        </div>
-
-
-    </div>
-
-
-    <!-- Bottom Footer -->
-
-    <div class="border-t border-gray-700 mt-12 pt-6 text-center">
-
-        <p class="text-gray-400 text-sm">
-            © 2026 Golden Saffron Cafe. All Rights Reserved.
-        </p>
-
-    </div>
-
-</section>
-
-
 </body>
+
 </html>
