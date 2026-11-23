@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu | Golden Saffron Cafe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#FFF3E8]">
+
+    <!-- Header -->
+    <header class="relative bg-[#21130D]">
+
+        <input type="checkbox" id="menu-toggle" class="peer hidden">
+
+        <!-- Navbar -->
+        <nav class="flex justify-between items-center p-5 md:px-10">
+
+            <h1 class="text-2xl font-bold text-white">
+                Golden Saffron Cafe
+            </h1>
+
+            <ul class="hidden md:flex gap-8 text-white">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <label for="menu-toggle"
+                class="text-white text-2xl md:hidden cursor-pointer">
+                ☰
+            </label>
+
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="absolute top-0 right-0 z-50 h-screen w-64 bg-[#21130D]/60 backdrop-blur-md text-white p-6 shadow-xl translate-x-full peer-checked:translate-x-0 transition-transform duration-300 md:hidden">
+
+            <label for="menu-toggle"
+                class="text-3xl block text-right cursor-pointer mb-8">
+                &times;
+            </label>
+
+            <ul class="flex flex-col gap-6 text-lg">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+
+        <!-- Page Heading -->
+        <div class="text-center py-16 md:py-24 text-white">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                Our Coffee Menu
+            </h2>
+
+            <p class="text-gray-300">
+                Fresh Coffee, Perfect Taste
+            </p>
+        </div>
+
+    </header>
+
+    <!-- Menu Section -->
+    <section class="px-5 py-16 md:px-16">
+
+        <h2 class="text-3xl md:text-4xl font-bold text-[#3B2115] text-center mb-4">
+            Explore Our Menu
+        </h2>
+
+        <p class="text-[#6B5B50] text-center mb-12">
+            Choose Your Favourite Coffee
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Cappuccino -->
+            <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                <img src="./capp.jpeg"
+                    alt="Cappuccino"
+                    class="w-full aspect-[4/3] object-cover rounded-lg">
+
+                <h3 class="text-xl font-bold text-[#3B2115] mt-5 mb-2">
+                    Cappuccino
+                </h3>
+
+                <p class="text-[#6B5B50] mb-4">
+                    Rich espresso with smooth steamed milk and creamy foam.
+                </p>
+
+                <p class="text-[#6F4E37] text-xl font-bold">
+                    ₹150
+                </p>
+
+            </div>
+
+            <!-- Cold Coffee -->
+            <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                <img src="./coldcoffe.jpeg"
+                    alt="Cold Coffee"
+                    class="w-full aspect-[4/3] object-cover rounded-lg">
+
+                <h3 class="text-xl font-bold text-[#3B2115] mt-5 mb-2">
+                    Cold Coffee
+                </h3>
+
+                <p class="text-[#6B5B50] mb-4">
+                    Refreshing chilled coffee with a rich and creamy taste.
+                </p>
+
+                <p class="text-[#6F4E37] text-xl font-bold">
+                    ₹120
+                </p>
+
+            </div>
+
+            <!-- Espresso -->
+            <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                <img src="./esspresso.jpeg"
+                    alt="Espresso"
+                    class="w-full aspect-[4/3] object-cover rounded-lg">
+
+                <h3 class="text-xl font-bold text-[#3B2115] mt-5 mb-2">
+                    Espresso
+                </h3>
+
+                <p class="text-[#6B5B50] mb-4">
+                    Strong and rich coffee with a bold flavour.
+                </p>
+
+                <p class="text-[#6F4E37] text-xl font-bold">
+                    ₹100
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#21130D] text-white text-center px-5 py-8">
+
+        <h3 class="text-xl font-bold mb-3">
+            Golden Saffron Cafe
+        </h3>
+
+        <p class="text-gray-400 text-sm">
+            © 2026 Golden Saffron Cafe. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>

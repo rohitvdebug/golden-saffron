@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Golden Saffron Cafe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#FFF3E8]">
+
+    <!-- Header -->
+    <header class="relative bg-[#21130D]">
+
+        <input type="checkbox" id="menu-toggle" class="peer hidden">
+
+        <!-- Navbar -->
+        <nav class="flex justify-between items-center p-5 md:px-10">
+
+            <h1 class="text-2xl font-bold text-white">
+                Golden Saffron Cafe
+            </h1>
+
+            <ul class="hidden md:flex gap-8 text-white">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <label for="menu-toggle"
+                class="text-white text-2xl md:hidden cursor-pointer">
+                ☰
+            </label>
+
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="absolute top-0 right-0 z-50 h-screen w-64 bg-[#21130D]/60 backdrop-blur-md text-white p-6 shadow-xl translate-x-full peer-checked:translate-x-0 transition-transform duration-300 md:hidden">
+
+            <label for="menu-toggle"
+                class="text-3xl block text-right cursor-pointer mb-8">
+                &times;
+            </label>
+
+            <ul class="flex flex-col gap-6 text-lg">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+
+        <!-- Page Heading -->
+        <div class="text-center py-16 md:py-24 text-white">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                About Our Cafe
+            </h2>
+
+            <p class="text-gray-300">
+                Discover the Story Behind Our Coffee
+            </p>
+        </div>
+
+    </header>
+
+    <!-- About Section -->
+    <section class="px-5 py-16 md:px-16">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+            <!-- Image -->
+            <div>
+                <img src="./header-img.png"
+                    class="w-full h-80 object-cover rounded-lg shadow-md hover:shadow-xl transition duration-300"
+                    alt="Golden Saffron Cafe">
+            </div>
+
+            <!-- Content -->
+            <div>
+
+                <p class="text-[#C49A75] font-semibold mb-3">
+                    WELCOME TO GOLDEN SAFFRON CAFE
+                </p>
+
+                <h2 class="text-3xl md:text-4xl font-bold text-[#3B2115] mb-5">
+                    Coffee Makes Everything Better
+                </h2>
+
+                <p class="text-[#6B5B50] leading-7 mb-5">
+                    Welcome to Golden Saffron Cafe, where every cup of coffee
+                    brings a little happiness to your day.
+                </p>
+
+                <p class="text-[#6B5B50] leading-7 mb-6">
+                    We believe in serving delicious coffee, fresh beverages
+                    and tasty treats in a warm and comfortable environment.
+                    Our cafe is a place where friends meet and memories are made.
+                </p>
+
+                <a href="menu.html"
+                    class="inline-block bg-[#6F4E37] text-white px-6 py-3 rounded-lg hover:bg-[#4B3621] hover:shadow-lg transition duration-300">
+                    Explore Our Menu
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#21130D] text-white text-center px-5 py-8">
+
+        <h3 class="text-xl font-bold mb-3">
+            Golden Saffron Cafe
+        </h3>
+
+        <p class="text-gray-400 text-sm">
+            © 2026 Golden Saffron Cafe. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
