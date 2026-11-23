@@ -14,18 +14,18 @@
 <body class="bg-[#FFF3E8]">
 
 
-    <header  id = "home" class="min-h-screen bg-cover bg-center
+    <header  id = "home" class=" relative min-h-screen bg-cover bg-center
 bg-[length:auto_100%] md:bg-cover"
 style="background-image: url('./header-img.png');">
 
         <div class="min-h-screen bg-black/50">
-
+<input type="checkbox" id="menu-toggle" class="peer hidden">
             <!-- Navbar -->
 
             <nav class="flex justify-between items-center p-5 md:px-10">
 
                 <h1 class="text-2xl font-bold text-white">
-                    Golden Saffron Cafe
+                    𝓖𝓸𝓵𝓭𝓮𝓷 𝓢𝓪𝓯𝓯𝓻𝓸𝓷 𝓒𝓪𝓯𝓮
                 </h1>
 
                 <ul class="hidden md:flex gap-8 text-white">
@@ -35,13 +35,30 @@ style="background-image: url('./header-img.png');">
                     <li><a href="#contact">Contact</a></li>
                 </ul>
 
-                <button class="text-white text-2xl md:hidden">
-                    ☰
-                </button>
+            <label for="menu-toggle"
+    class="text-white text-2xl md:hidden cursor-pointer">
+    ☰
+</label>
 
             </nav>
 
+<!-- Mobile Menu -->
 
+<div class="absolute top-0 right-0 z-50 h-screen w-64 bg-[#21130D]/60 backdrop-blur-md text-white p-6 shadow-xl translate-x-full peer-checked:translate-x-0 transition-transform duration-300 md:hidden">
+
+    <label for="menu-toggle"
+        class="text-3xl block text-right cursor-pointer mb-8">
+        &times;
+    </label>
+
+    <ul class="flex flex-col gap-6 text-lg">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+</div>
             <!-- Main Content -->
 
             <div class="flex flex-col items-center justify-center
