@@ -13,89 +13,102 @@
 
 <body class="bg-[#FFF3E8]">
 
-    <!-- Header -->
-    <header id="home"
-        class="relative min-h-screen bg-cover bg-center bg-no-repeat"
-        style="background-image: url('./header-img.png');">
+   <!-- Header -->
+<header id="home" class="relative bg-[#21130D]">
 
-        <div class="min-h-screen bg-black/50">
+    <input type="checkbox" id="menu-toggle" class="peer hidden">
 
-            <input type="checkbox" id="menu-toggle" class="peer hidden">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-40 bg-[#21130D] shadow-md">
 
-            <!-- Navbar -->
-<!-- Navbar -->
-<nav class="w-full max-w-7xl mx-auto flex justify-between items-center gap-4 p-5 md:px-10">
+    <div class="max-w-7xl mx-auto flex justify-between items-center gap-4 px-5 py-2 md:px-10">
+
+        <a href="index.html" class="flex items-center gap-3">
+
+    <img src="./cafeimage.png"
+        class="w-8 h-8 md:w-10 md:h-10 rounded-full object-contain"
+        alt="Cafe Logo">
 
     <h1 class="text-lg md:text-2xl font-bold text-white">
         𝓖𝓸𝓵𝓭𝓮𝓷 𝓢𝓪𝓯𝓯𝓻𝓸𝓷 𝓒𝓪𝓯𝓮
     </h1>
 
-    <ul class="hidden md:flex items-center gap-6 text-white">
+</a>
+        <ul class="hidden md:flex items-center gap-6 text-white">
 
-        <li>
-            <a href="index.html"
-                class="text-[#C49A75] font-bold hover:text-white transition duration-300">
-                Home
-            </a>
-        </li>
+            <li>
+                <a href="index.html"
+                    class="text-[#C49A75] font-bold hover:text-white transition duration-300">
+                    Home
+                </a>
+            </li>
 
-        <li>
-            <a href="about.html"
-                class="hover:text-[#C49A75] transition duration-300">
-                About
-            </a>
-        </li>
+            <li>
+                <a href="about.html"
+                    class="hover:text-[#C49A75] transition duration-300">
+                    About
+                </a>
+            </li>
 
-        <li>
-            <a href="menu.html"
-                class="hover:text-[#C49A75] transition duration-300">
-                Menu
-            </a>
-        </li>
+            <li>
+                <a href="menu.html"
+                    class="hover:text-[#C49A75] transition duration-300">
+                    Menu
+                </a>
+            </li>
 
-        <li>
-            <a href="contact.html"
-                class="hover:text-[#C49A75] transition duration-300">
-                Contact
-            </a>
-        </li>
+            <li>
+                <a href="contact.html"
+                    class="hover:text-[#C49A75] transition duration-300">
+                    Contact
+                </a>
+            </li>
 
-    </ul>
+        </ul>
 
-    <label for="menu-toggle"
-        class="text-white text-2xl md:hidden cursor-pointer">
-        ☰
-    </label>
+        <label for="menu-toggle"
+            class="text-white text-2xl md:hidden cursor-pointer">
+            ☰
+        </label>
+    </div>
+    </nav>
 
-</nav>
+    <!-- Mobile Menu -->
+    <div class="hidden peer-checked:block absolute top-0 right-0 z-50 h-screen w-64 bg-[#21130D]/90 backdrop-blur-md text-white p-6 shadow-xl md:!hidden">
 
-            <!-- Mobile Menu -->
-            <div
-                class="absolute top-0 right-0 z-50 h-screen w-64 bg-[#21130D]/60 backdrop-blur-md text-white p-6 shadow-xl translate-x-full peer-checked:translate-x-0 transition-transform duration-300 md:hidden">
+        <label for="menu-toggle"
+            class="text-3xl block text-right cursor-pointer mb-8">
+            ×
+        </label>
 
-                <label for="menu-toggle"
-                    class="text-3xl block text-right cursor-pointer mb-8">
-                    
-                </label>
+        <ul class="flex flex-col gap-6 text-white">
 
-                <ul class="flex flex-col gap-6 text-white">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
 
-            </div>
+        </ul>
+
+    </div>
+
+    <!-- Hero Section -->
+    <section class="bg-[#FFF3E8] px-5 py-8">
+
+        <div class="max-w-7xl mx-auto relative bg-cover bg-center bg-no-repeat rounded-xl overflow-hidden shadow-lg"
+            style="background-image: url('./header-img.png');">
+
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black/40"></div>
 
             <!-- Hero Content -->
-            <div
-                class="flex flex-col items-center justify-center text-center text-white min-h-[80vh] px-5">
+            <div class="relative flex flex-col items-center justify-center text-center text-white min-h-[350px] md:min-h-[450px] px-5 py-10">
 
                 <p class="text-sm md:text-lg mb-5">
                     WELCOME TO GOLDEN SAFFRON COFFEE
                 </p>
 
-                <h2 class="text-4xl md:text-6xl font-bold mb-5">
+                <h2 class="text-3xl md:text-5xl font-bold mb-5">
                     A Perfect Blend
                     <br>
                     Of Taste & Comfort
@@ -113,8 +126,10 @@
             </div>
 
         </div>
-    </header>
 
+    </section>
+
+</header>
 
     <!-- About Section -->
     <section class="px-5 py-16 md:px-10">
